@@ -9,9 +9,9 @@ cursor_shape     block
 url_style        dotted
 adjust_line_height 120%
 confirm_os_window_close 0
-background_opacity 1
+background_opacity 0.75
 
 # BEGIN_KITTY_THEME
-# Pencil Light
+# purpurite
 include current-theme.conf
 # END_KITTY_THEME
