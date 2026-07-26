@@ -1,21 +1,13 @@
-local terminal    = "kitty"
-local fileManager = "dolphin"
-local menu = "hyprlauncher"
-
 local mainMod = "SUPER"
 
-hl.bind(mainMod .. " + T", hl.dsp.exec_cmd(terminal))
-hl.bind(mainMod .. " + E", hl.dsp.exec_cmd(fileManager))
+hl.bind(mainMod .. " + T", hl.dsp.exec_cmd("kitty"))
+hl.bind(mainMod .. " + E", hl.dsp.exec_cmd("dolphin"))
 hl.bind(mainMod .. " + F", hl.dsp.exec_cmd("firefox"))
-hl.bind(mainMod .. " + Z", hl.dsp.exec_cmd("zed"))
+hl.bind(mainMod .. " + Z", hl.dsp.exec_cmd("zeditor"))
 
 local closeWindowBind = hl.bind(mainMod .. " + Q", hl.dsp.window.close())
--- closeWindowBind:set_enabled(false)
-hl.bind(mainMod .. " + space", hl.dsp.exec_cmd(menu))
+hl.bind(mainMod .. " + space", hl.dsp.exec_cmd("hyprlauncher"))
 hl.bind(mainMod .. " + M", hl.dsp.exec_cmd("command -v hyprshutdown >/dev/null 2>&1 && hyprshutdown || hyprctl dispatch 'hl.dsp.exit()'"))
---hl.bind(mainMod .. " + V", hl.dsp.window.float({ action = "toggle" }))
---hl.bind(mainMod .. " + P", hl.dsp.window.pseudo())
---hl.bind(mainMod .. " + J", hl.dsp.layout("togglesplit"))    -- dwindle only
 
 -- Move focus with mainMod + arrow keys
 hl.bind(mainMod .. " + left",  hl.dsp.focus({ direction = "left" }))
