@@ -15,6 +15,6 @@ map ctrl+c copy_or_interrupt
 map ctrl+p paste_from_clipboard
 
 # BEGIN_KITTY_THEME
-# Pencil Light
+# Tango Light
 include current-theme.conf
 # END_KITTY_THEME
